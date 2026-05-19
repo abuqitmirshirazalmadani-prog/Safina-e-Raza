@@ -18,28 +18,28 @@ export default function Mission() {
         </div>
 
         <div className="relative z-10">
-          <h2 className="leading-[1.4] transition-all duration-700 text-3xl md:text-6xl lg:text-7xl italic font-medium text-white/30 tracking-tighter font-marcellus text-balance">
-            <span className="font-medium text-white drop-shadow-lg">We are Karwan Safina-e-Raza</span>, 
+          <h2 className="leading-[1.2] transition-all duration-700 text-3xl md:text-7xl lg:text-8xl italic font-medium text-white/40 tracking-tighter font-marcellus text-balance">
+            <span className="font-bold text-white drop-shadow-2xl">We are Karwan Safina-e-Raza</span>, 
             a dedicated travel partner committed to 
-            <span className="hover:text-brand-accent hover:shadow-[0_0_30px_rgba(250,204,21,0.4)] hover:scale-[1.01] transition-all duration-300 cursor-default inline-block origin-bottom font-medium text-white">transforming your pilgrimage</span> 
+            <span className="hover:text-brand-accent hover:shadow-[0_0_40px_rgba(250,204,21,0.5)] hover:scale-[1.01] transition-all duration-500 cursor-default inline-block origin-bottom font-bold text-white">transforming your pilgrimage</span> 
             into a seamless spiritual odyssey. With over 14 years of experience, we provide 
-            <span className="text-white hover:text-brand-accent hover:shadow-[0_0_30px_rgba(250,204,21,0.4)] hover:scale-[1.01] transition-all duration-300 cursor-default inline-block origin-bottom font-medium">expert guidance</span> 
+            <span className="text-white hover:text-brand-accent hover:shadow-[0_0_40px_rgba(250,204,21,0.5)] hover:scale-[1.01] transition-all duration-500 cursor-default inline-block origin-bottom font-bold">expert guidance</span> 
             that empowers 
-            <span className="text-white hover:text-brand-accent hover:shadow-[0_0_30px_rgba(250,204,21,0.4)] hover:scale-[1.01] transition-all duration-300 cursor-default inline-block origin-bottom font-medium">every individual</span> 
+            <span className="text-white hover:text-brand-accent hover:shadow-[0_0_40px_rgba(250,204,21,0.5)] hover:scale-[1.01] transition-all duration-500 cursor-default inline-block origin-bottom font-bold">every individual</span> 
             to experience the holy land with 
-            <span className="text-white hover:text-brand-accent hover:shadow-[0_0_30px_rgba(250,204,21,0.4)] hover:scale-[1.01] transition-all duration-300 cursor-default inline-block origin-bottom font-medium">unmatched comfort and devotion</span>.
+            <span className="text-white hover:text-brand-accent hover:shadow-[0_0_40px_rgba(250,204,21,0.5)] hover:scale-[1.01] transition-all duration-500 cursor-default inline-block origin-bottom font-bold">unmatched comfort and devotion</span>.
           </h2>
         </div>
 
-        <div className="mt-12 md:mt-24 grid grid-cols-1 sm:grid-cols-3 gap-8 border-t border-white/10 pt-12 md:pt-24 lg:px-20">
+        <div className="mt-16 md:mt-32 grid grid-cols-1 sm:grid-cols-3 gap-12 md:gap-16 border-t border-white/10 pt-16 md:pt-32 lg:px-20">
           {[
             { label: 'Trusted Pilgrims', value: '15,000+' },
             { label: 'Successful Tours', value: '500+' },
             { label: 'Years Experience', value: '14+' }
           ].map((stat, i) => (
-            <div key={i} className="flex flex-col gap-2 group cursor-default">
-              <span className="text-brand-accent font-cinzel text-5xl md:text-7xl font-bold uppercase transition-transform group-hover:scale-110 origin-left">{stat.value}</span>
-              <span className="text-slate-400 text-xs md:text-sm font-inter uppercase tracking-[0.4em] opacity-60">{stat.label}</span>
+            <div key={i} className="flex flex-col gap-3 group cursor-default">
+              <span className="text-brand-accent font-cinzel text-5xl md:text-8xl font-bold uppercase transition-all duration-500 group-hover:scale-105 group-hover:tracking-wider origin-left">{stat.value}</span>
+              <span className="text-slate-400 text-xs md:text-sm font-inter uppercase tracking-[0.5em] opacity-40 group-hover:opacity-100 transition-opacity">{stat.label}</span>
             </div>
           ))}
         </div>

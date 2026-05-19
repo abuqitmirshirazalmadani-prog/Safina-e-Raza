@@ -635,8 +635,8 @@ export const FullScreenScrollFX = forwardRef<HTMLDivElement, FullScreenFXProps>(
           .fx-bg-overlay { position: absolute; inset: 0; background: var(--fx-overlay); }
 
           .fx-header {
-            grid-column: 1 / 13; align-self: start; padding-top: 6vh;
-            font-size: clamp(2rem, 9vw, 9rem); line-height: 0.86; text-align: center; color: var(--fx-text);
+            grid-column: 1 / 13; align-self: start; padding-top: 8vh;
+            font-size: clamp(2rem, 9vw, 9rem); line-height: 1.1; text-align: center; color: var(--fx-text);
           }
           .fx-header > * { display: block; }
 
@@ -662,7 +662,7 @@ export const FullScreenScrollFX = forwardRef<HTMLDivElement, FullScreenFXProps>(
             color: var(--fx-text);
             font-weight: 800;
             letter-spacing: 0em;
-            line-height: 1;
+            line-height: 1.1;
             margin: calc(var(--fx-row-gap) / 2) 0;
             opacity: 0.35;
             transition: opacity 0.3s ease, transform 0.3s ease;
@@ -687,47 +687,55 @@ export const FullScreenScrollFX = forwardRef<HTMLDivElement, FullScreenFXProps>(
           .fx-center {
             display: grid; place-items: center; text-align: center; height: 60vh; overflow: hidden;
           }
-          .fx-featured { position: absolute; opacity: 0; visibility: hidden; }
+          .fx-featured { position: absolute; opacity: 0; visibility: hidden; width: 100%; padding: 0 1rem; }
           .fx-featured.active { opacity: 1; visibility: visible; }
           .fx-featured-title {
             margin: 0; color: var(--fx-text);
             font-weight: 900; letter-spacing: -0.01em;
             font-size: clamp(2rem, 7.5vw, 6rem);
+            line-height: 1.1;
+            overflow-wrap: break-word;
           }
           .fx-word-mask { display: inline-block; overflow: hidden; vertical-align: middle; }
           .fx-word { display: inline-block; vertical-align: middle; }
 
           .fx-footer {
-            grid-column: 1 / 13; align-self: end; padding-bottom: 5vh; text-align: center;
+            grid-column: 1 / 13; align-self: end; padding-bottom: 8vh; text-align: center;
           }
-          .fx-footer-title { color: var(--fx-text); font-size: clamp(1.6rem, 7vw, 7rem); font-weight: 900; letter-spacing: -0.01em; line-height: 0.9; }
-          .fx-progress { width: 200px; height: 2px; margin: 1rem auto 0; background: rgba(245,245,245,0.28); position: relative; }
+          .fx-footer-title { color: var(--fx-text); font-size: clamp(1.2rem, 5vw, 4rem); font-weight: 900; letter-spacing: -0.01em; line-height: 1.1; }
+          .fx-progress { width: 180px; height: 2px; margin: 1rem auto 0; background: rgba(245,245,245,0.2); position: relative; }
           .fx-progress-fill { position: absolute; inset: 0 auto 0 0; width: 0%; background: var(--fx-text); height: 100%; transition: width 0.3s ease; }
-          .fx-progress-numbers { position: absolute; inset: auto 0 100% 0; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--fx-text); }
+          .fx-progress-numbers { position: absolute; inset: auto 0 100% 0; display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--fx-text); padding-bottom: 4px; }
 
           @media (max-width: 900px) {
             .fx-fixed-section { height: ${total}00vh; }
-            .fx-header { padding-top: 10vh; grid-column: 1 / 13; font-size: clamp(1.5rem, 6vw, 3rem); }
+            .fx-header { 
+              padding-top: 12vh; 
+              grid-column: 1 / 13; 
+              font-size: clamp(1.1rem, 5vw, 2.2rem); 
+              z-index: 10;
+              position: relative;
+            }
             .fx-content {
               position: relative;
               grid-template-columns: 1fr;
-              grid-template-rows: 1fr 2fr 1fr;
-              row-gap: 2vh;
+              grid-template-rows: 0.4fr 1fr 0.4fr;
+              row-gap: 1vh;
               height: 100%;
-              padding: 15vh var(--fx-grid-px) 10vh;
+              padding: 18vh var(--fx-grid-px) 12vh;
             }
-            .fx-left, .fx-right { height: 8vh; overflow: visible; }
-            .fx-center { height: 40vh; position: relative; }
+            .fx-left, .fx-right { height: 10vh; overflow: visible; }
+            .fx-center { height: 30vh; position: relative; width: 100%; }
             .fx-left { justify-items: center; grid-row: 1; }
             .fx-center { grid-row: 2; }
             .fx-right { justify-items: center; grid-row: 3; }
             .fx-track { transform: none !important; display: flex; gap: 1rem; }
-            .fx-item { font-size: 0.9rem; opacity: 0; display: none; }
+            .fx-item { font-size: 0.8rem; opacity: 0; display: none; }
             .fx-item.active { opacity: 1; display: block; transform: none !important; padding: 0; }
             .fx-item.active::before, .fx-item.active::after { display: none; }
-            .fx-featured-title { font-size: clamp(1.5rem, 5vw, 2.5rem); }
-            .fx-footer { padding-bottom: 8vh; }
-            .fx-footer-title { font-size: clamp(1.2rem, 5vw, 2rem); }
+            .fx-featured-title { font-size: clamp(1.8rem, 8vw, 3rem); line-height: 1.2; }
+            .fx-footer { padding-bottom: 12vh; }
+            .fx-footer-title { font-size: clamp(1rem, 4vw, 1.5rem); }
           }
         `}</style>
       </div>
