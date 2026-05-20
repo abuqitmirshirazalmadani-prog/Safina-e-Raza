@@ -63,7 +63,7 @@ export function initIntegrations() {
  * @param path The current page pathname to track
  */
 export function trackPageView(path: string) {
-  const gaId = (import.meta as any).env.VITE_GA_MEASUREMENT_ID;
+  const gaId = (import.meta as any).env.VITE_GA_MEASUREMENT_ID || 'G-Y5F69C1WMM';
   if (gaId && window.gtag) {
     window.gtag('config', gaId, {
       page_path: path,
