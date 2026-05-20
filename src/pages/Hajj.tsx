@@ -151,9 +151,14 @@ const Hajj: React.FC = () => {
                <p className="text-sm font-medium font-lora opacity-80 leading-relaxed italic">
                   Note: Slots are extremely limited due to the new Saudi quota system. We recommend pre-registration to ensure your passport is processed in the first batch.
                </p>
-               <button className="w-full bg-black text-white py-5 rounded-2xl font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-3 hover:translate-x-2 transition-transform">
-                  Apply for Pre-Registration <ArrowRight className="w-4 h-4" />
-               </button>
+               <a 
+                  href="https://wa.me/923113813341"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-black text-white py-5 rounded-2xl font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-3 hover:translate-x-2 transition-transform text-center"
+               >
+                  Apply via WhatsApp Pre-Registration <ArrowRight className="w-4 h-4" />
+               </a>
             </div>
           </div>
         </div>

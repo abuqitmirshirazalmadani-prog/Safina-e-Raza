@@ -10,7 +10,8 @@ import {
   Waves,
   Building2,
   Calendar,
-  Phone
+  Phone,
+  MessageSquare
 } from 'lucide-react';
 
 const DetailedItinerary = () => {
@@ -112,13 +113,23 @@ const DetailedItinerary = () => {
             </ul>
             
             <div className="p-6 md:p-8 flex flex-col sm:flex-row gap-4 border-t border-white/10">
-              <a href="#contact" className="flex-1 inline-flex items-center justify-center gap-3 rounded-xl md:rounded-2xl bg-blue-500 hover:bg-blue-600 text-white px-6 py-3.5 md:py-4 text-sm font-bold uppercase tracking-widest transition-all hover:scale-[1.02]">
-                <Calendar className="h-4 h-4 md:h-5 md:w-5" />
-                Book Itinerary
+              <a 
+                href="https://wa.me/923113813341" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 inline-flex items-center justify-center gap-3 rounded-xl md:rounded-2xl bg-blue-500 hover:bg-blue-600 text-white px-6 py-3.5 md:py-4 text-sm font-bold uppercase tracking-widest transition-all hover:scale-[1.02]"
+              >
+                <MessageSquare className="h-4 w-4 md:h-5 md:w-5" />
+                Book Itinerary via WhatsApp
               </a>
-              <a href="tel:03213813341" className="flex-1 inline-flex items-center justify-center gap-3 rounded-xl md:rounded-2xl bg-white/10 hover:bg-white/20 text-white px-6 py-3.5 md:py-4 text-sm font-bold uppercase tracking-widest transition-all">
+              <a 
+                href="https://wa.me/923113813341" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 inline-flex items-center justify-center gap-3 rounded-xl md:rounded-2xl bg-white/10 hover:bg-white/20 text-white px-6 py-3.5 md:py-4 text-sm font-bold uppercase tracking-widest transition-all"
+              >
                 <Phone className="h-4 md:h-5 w-5 text-blue-400" />
-                Get Custom Quote
+                WhatsApp Custom Quote
               </a>
             </div>
           </div>

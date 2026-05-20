@@ -14,16 +14,21 @@ import Hajj from './pages/Hajj';
 import About from './pages/About';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
+import { initIntegrations, trackPageView } from './lib/integrations';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
+    trackPageView(pathname);
   }, [pathname]);
   return null;
 }
 
 export default function App() {
+  useEffect(() => {
+    initIntegrations();
+  }, []);
   return (
     <BrowserRouter>
       <ScrollToTop />
@@ -57,7 +62,7 @@ export default function App() {
 
         {/* Floating WhatsApp Button for better conversion */}
         <a 
-          href="https://wa.me/923213813341" 
+          href="https://wa.me/923113813341" 
           target="_blank" 
           rel="noopener noreferrer"
           className="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white p-4 rounded-full shadow-[0_10px_40px_rgba(37,211,102,0.4)] hover:scale-110 active:scale-95 transition-all group"

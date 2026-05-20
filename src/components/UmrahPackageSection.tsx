@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
-import { Phone, MapPin, CheckCircle2, Plane, FileText, Home, Bus, BookOpen, DollarSign } from 'lucide-react';
+import { Phone, MapPin, CheckCircle2, Plane, FileText, Home, Bus, BookOpen, DollarSign, MessageSquare } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -193,13 +193,15 @@ const UmrahPackageSection: React.FC = () => {
                     <span className="text-xl md:text-3xl font-bold tracking-tight font-marcellus">0321-3813341</span>
                   </a>
                   <a
-                    href="tel:03113813341"
-                    className="flex items-center gap-3 md:gap-4 text-blue-400 hover:text-blue-300 transition-colors group"
+                    href="https://wa.me/923113813341"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 md:gap-4 text-emerald-400 hover:text-emerald-300 transition-colors group"
                   >
-                    <div className="p-3 md:p-4 rounded-2xl md:rounded-3xl bg-blue-500/5 group-hover:bg-blue-500/10 transition-colors border border-blue-500/20">
-                      <Phone className="w-5 h-5 md:w-6 md:h-6" />
+                    <div className="p-3 md:p-4 rounded-2xl md:rounded-3xl bg-emerald-500/5 group-hover:bg-emerald-500/10 transition-colors border border-emerald-500/20">
+                      <MessageSquare className="w-5 h-5 md:w-6 md:h-6" />
                     </div>
-                    <span className="text-xl md:text-3xl font-bold tracking-tight font-marcellus">0311-3813341</span>
+                    <span className="text-xl md:text-3xl font-bold tracking-tight font-marcellus">0311-3813341 (WhatsApp)</span>
                   </a>
                 </div>
 

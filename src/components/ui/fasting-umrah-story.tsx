@@ -128,14 +128,16 @@ export function FastingUmrahShowcase() {
                     
                     <div className="mt-6 md:mt-10 flex flex-wrap items-center gap-4 md:gap-6">
                       <a
-                        href="#contact"
+                        href="https://wa.me/923113813341"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="px-5 md:px-8 py-2.5 md:py-4 rounded-full font-bold uppercase tracking-widest text-[9px] md:text-xs transition-all hover:scale-105 shadow-lg"
                         style={{ 
                           backgroundColor: slide.textColor, 
                           color: slide.bgColor 
                         }}
                       >
-                        Book Your Seat
+                        Book Your Seat via WhatsApp
                       </a>
                     </div>
                   </div>

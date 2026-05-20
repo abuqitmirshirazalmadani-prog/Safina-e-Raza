@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
                 </div>
               </a>
 
-              <a href="https://wa.me/923113813341" className="flex items-center gap-6 group">
+              <a href="https://wa.me/923113813341" target="_blank" rel="noopener noreferrer" className="flex items-center gap-6 group">
                 <div className="w-16 h-16 rounded-3xl bg-white/5 border border-white/10 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
                   <MessageSquare className="w-8 h-8" />
                 </div>

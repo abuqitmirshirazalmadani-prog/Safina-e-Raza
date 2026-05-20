@@ -110,8 +110,8 @@ export default function Packages() {
         </div>
 
         <div className="flex justify-center w-full">
-          <a href="#" className="bg-transparent border-2 border-[#2d322f] px-12 py-5 text-sm font-bold uppercase tracking-widest text-[#2d322f] hover:bg-brand-primary hover:border-brand-primary hover:text-white transition-all duration-300 transform hover:-translate-y-1 rounded-sm">
-            View All Packages
+          <a href="https://wa.me/923113813341" target="_blank" rel="noopener noreferrer" className="bg-transparent border-2 border-[#2d322f] px-12 py-5 text-sm font-bold uppercase tracking-widest text-[#2d322f] hover:bg-brand-primary hover:border-brand-primary hover:text-white transition-all duration-300 transform hover:-translate-y-1 rounded-sm">
+            Inquire via WhatsApp
           </a>
         </div>
       </div>

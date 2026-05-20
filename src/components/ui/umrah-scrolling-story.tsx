@@ -132,11 +132,13 @@ export function UmrahScrollingStory() {
               {/* Action Button */}
               <div className="absolute bottom-12 left-8 md:left-16 group">
                 <a
-                  href="#contact"
+                  href="https://wa.me/923113813341"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 px-8 py-4 bg-current rounded-full transition-all hover:scale-105"
                 >
                   <span className="font-bold uppercase tracking-widest text-xs" style={{ color: slidesData[activeIndex].bgColor }}>
-                    Contact Sajid Ali Khan
+                    Contact via WhatsApp
                   </span>
                 </a>
               </div>

@@ -54,8 +54,8 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <a href="tel:03213813341" className="bg-brand-accent text-black px-5 py-2 rounded-full text-sm font-bold shadow-lg hover:scale-105 transition-transform active:scale-95">
-            Call Now
+          <a href="https://wa.me/923113813341" target="_blank" rel="noopener noreferrer" className="bg-brand-accent text-black px-5 py-2 rounded-full text-sm font-bold shadow-lg hover:scale-105 transition-transform active:scale-95">
+            WhatsApp Us
           </a>
         </div>
 
@@ -110,12 +110,15 @@ export default function Navbar() {
             </div>
 
             <div className="p-10 border-t border-white/5">
-              <button 
+              <a 
+                href="https://wa.me/923113813341"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="w-full bg-brand-accent text-black py-5 rounded-2xl text-xl font-bold shadow-2xl"
+                className="w-full bg-brand-accent text-black py-5 rounded-2xl text-xl font-bold shadow-2xl block text-center"
               >
-                Call Coordinator
-              </button>
+                Chat on WhatsApp
+              </a>
             </div>
           </div>
         </motion.div>

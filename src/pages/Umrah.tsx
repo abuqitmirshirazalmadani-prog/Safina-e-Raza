@@ -178,7 +178,7 @@ const Umrah: React.FC = () => {
             <a href="tel:03213813341" className="bg-black text-white px-12 py-5 rounded-full font-bold uppercase tracking-widest text-sm hover:scale-105 transition-transform shadow-2xl">
               Call Sajid Khan
             </a>
-            <a href="https://wa.me/923213813341" className="bg-white text-black px-12 py-5 rounded-full font-bold uppercase tracking-widest text-sm hover:scale-105 transition-transform shadow-2xl">
+            <a href="https://wa.me/923113813341" className="bg-white text-black px-12 py-5 rounded-full font-bold uppercase tracking-widest text-sm hover:scale-105 transition-transform shadow-2xl">
               WhatsApp Now
             </a>
          </div>

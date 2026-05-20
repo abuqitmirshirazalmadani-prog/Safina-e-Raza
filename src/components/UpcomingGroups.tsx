@@ -37,11 +37,11 @@ export default function UpcomingGroups() {
   return (
     <section id="events" className="relative z-10 max-w-7xl mx-auto py-24 px-6">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-12">
-        <a href="#" className="inline-flex items-center gap-2 rounded-xl border border-brand-accent/30 bg-brand-accent/10 px-6 py-3 text-sm font-medium text-brand-accent hover:bg-brand-accent/15 transition group">
+        <a href="https://wa.me/923113813341" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-xl border border-brand-accent/30 bg-brand-accent/10 px-6 py-3 text-sm font-medium text-brand-accent hover:bg-brand-accent/15 transition group">
           <Calendar className="h-4 w-4 group-hover:rotate-12 transition-transform" />
-          <span className="tracking-wide font-bold uppercase">Explore All Departures</span>
+          <span className="tracking-wide font-bold uppercase">Explore Departures via WhatsApp</span>
         </a>
-        <a href="#" className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white/80 hover:bg-white/10 transition">
+        <a href="https://wa.me/923113813341" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white/80 hover:bg-white/10 transition">
           <Mail className="h-4 w-4" />
           <span className="tracking-wide font-bold uppercase">Get Alerts via WhatsApp</span>
         </a>
@@ -128,9 +128,14 @@ export default function UpcomingGroups() {
         <Clock className="w-10 h-10 text-brand-accent" />
         <h3 className="font-oswald text-2xl uppercase font-bold tracking-tight">Need a custom departure date?</h3>
         <p className="text-slate-400 max-w-md">We can organize private groups and tailored itineraries for families or organizations.</p>
-        <button className="mt-4 bg-white text-black px-8 py-3 rounded-xl font-bold hover:bg-brand-accent transition-colors tracking-widest uppercase text-xs">
-          Request Quote
-        </button>
+        <a 
+          href="https://wa.me/923113813341"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 bg-white text-black px-8 py-3 rounded-xl font-bold hover:bg-brand-accent transition-colors tracking-widest uppercase text-xs inline-block"
+        >
+          Request Quote via WhatsApp
+        </a>
       </div>
     </section>
   );

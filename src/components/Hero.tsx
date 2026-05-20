@@ -65,8 +65,8 @@ export default function Hero() {
               View Packages
             </button>
 
-            <a href="#contact" className="relative z-[2] inline-flex items-center justify-center gap-2 overflow-hidden rounded-full px-8 py-3 text-base font-semibold tracking-tight text-white bg-blue-600/10 ring-1 ring-blue-400/30 shadow-[0_0_0_1px_rgba(56,189,248,0.25),inset_0_0_0_1px_rgba(255,255,255,0.08)] transition-all duration-300 hover:ring-blue-400/60">
-              <span>Book Journey</span>
+            <a href="https://wa.me/923113813341" target="_blank" rel="noopener noreferrer" className="relative z-[2] inline-flex items-center justify-center gap-2 overflow-hidden rounded-full px-8 py-3 text-base font-semibold tracking-tight text-white bg-blue-600/10 ring-1 ring-blue-400/30 shadow-[0_0_0_1px_rgba(56,189,248,0.25),inset_0_0_0_1px_rgba(255,255,255,0.08)] transition-all duration-300 hover:ring-blue-400/60">
+              <span>Book Journey via WhatsApp</span>
               <ArrowRight className="w-4 h-4 text-blue-100" />
             </a>
           </div>

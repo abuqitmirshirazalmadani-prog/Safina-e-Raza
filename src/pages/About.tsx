@@ -150,9 +150,14 @@ const About: React.FC = () => {
                   <p className="text-sm font-bold uppercase tracking-widest opacity-70 font-inter">Recommendation Rate</p>
                 </div>
               </div>
-              <button className="w-full mt-8 bg-black text-white py-4 rounded-2xl font-bold uppercase tracking-widest text-xs hover:scale-105 transition-transform">
-                Join Our Next Group
-              </button>
+              <a 
+                href="https://wa.me/923113813341"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full mt-8 bg-black text-white py-4 rounded-2xl font-bold uppercase tracking-widest text-xs hover:scale-105 transition-transform block text-center"
+              >
+                Join Next Group via WhatsApp
+              </a>
             </div>
             
             <div className="p-8 rounded-[40px] border border-white/10 bg-white/5 flex flex-col gap-6">
